@@ -1,117 +1,53 @@
-# Advanced JavaScript Assignment: Cloze Constructors
+#  ****FLASH CARD GENERATOR****
 
-### Overview
+## What is this app anyways???
 
-In this week's assignment, you will create the backend for a basic flashcard application.
+This is a fun command-line based trivia flash card game where the user is prompted with questions and shown the correct answer after making a guess. 
 
-The backend will essentially constitute an API that allows users to create two types of flashcards.
+The right and wrong answers are tallied up and the total is displayed at the end of the game.
 
-1. **Basic** flashcards, which have a front (_"Who was the first president of the United States?"_), and a back (_"George Washington"_).
+# Flashcard-Generator :card_index:
+This Flashcard Generator is designed to be user-friendly.  RUN 'node FlashCardApp.js' in your command line, and the CLI will guide you through the process of creating both Basic and Cloze-deleted flashcards.  Your cards will be saved into log.txt and cloze-log.txt, respectively.  The Flashcard Generator also allows you to quiz yourself using the cards you created.
 
-2. **Cloze-Deleted** flashcards, which present _partial_ text (_"... was the first president of the United States."_), and the full text when the user requests it (_"George Washington was the first president of the United States."_)
 
-#### Cloze Deletions
+## Table of Contents
 
-A **cloze deletion** is simply a sentence that has had some of its text removed. For example, given the sentence:
+- [Install and Use this App](#InstallUse)
+- [Creating a Basic Flashcard](#CreatingBasicFlashcards)
+- [Creating a Cloze Flashcard](#CreatingClozeFlashcards)
+- [Taking a quiz](#Quizes)
+- [Next Steps](#ToFollow)
 
-_"George Washington was the first president of the United States."_
 
-...We can create a "cloze deletion" by removing the words _"George Washington"_:
+##  How to Install and Use this app 
 
-_"... was the first president of the United States."_
+From a directory of your choosing, simply clone this repository.  Install the 'inquirer.js' and 'node.js' dependency modules from the command line, and RUN 'node FlashCardApp.js' to start the app.
 
-This is useful for building flash card applications that forces users to remember the important part of a sentence, and is [a common device in educational applications](https://en.wikipedia.org/wiki/Cloze_test).
 
-A flash card built this way has three parts:
+##  Creating Basic Flashcards
 
-1. The **full text**. This is the entire sentence users need to remember:  _"George Washington was the first president of the United States."_
+Creating basic flashcards is very easy. Each card will display a question on the front and its answer on the back. Just use the arrow keys to navigate to 'Create Basic Card' from the command line menu.  Follow the prompts and in no time flat, you're creating the front and back of a card.  You'll have the option to make more basic cards or perform different tasks.
 
-2. The **cloze deletion**. This is the text we've chosen to remove: _"George Washington"_.
 
-3. The **partial text**. This is what we get if we remove the **cloze deletion** from the **full text**: _"... was the first president of the United States._
+##  Creating Cloze Flashcards
 
-See below for examples as to how your constructor should behave.
+Creating Cloze cards also couldn't be easier.  Choose 'Create Cloze Cards' from the CLI menu and you'll be prompted to enter a sentence, with a word or phrase hidden in parentheses.  The omitted word/phrase can be placed anywhere in the sentence as follows:
 
-## Instructions
+    --    The (Salt Lick) is one of the most famous BBQ joints in Austin, Texas.
 
-* Create a new GitHub repository, named `Flashcard-Generator` or something similar. Clone this to your local drive.
+    --    The capital of Texas is (Austin).
 
-* Create a new file named `BasicCard.js`:
 
-  * This file should define a Node module that exports a constructor for creating basic flashcards, e.g.:
-    `module.exports = BasicCard;`
+##  Quizes
 
-  * The constructor should accept two arguments: `front` and `back`.
+It is also easy to quiz yourself using the flashcards you created.  Choose the 'basic-quiz' or 'cloze-quiz' option, depending which set of cards you'd like to access. The basic quiz will present the front of your card and allow you to type in the answer.  The cloze quiz will present your cloze cards with a blank replacing the hidden word/s.  In both cases, the program will let you know whether each answer was correct and tally your score at the end.  
 
-  * The constructed object should have a `front` property that contains the text on the front of the card.
 
-  * The constructed object should have a `back` property that contains the text on the back of the card.
+##  To Follow Down the Road...
 
-* Create a new file named `ClozeCard.js`:
+Here's a short list of things I'd like to incorporate sometime in the future....
 
-  * This file should define a Node module that exports a constructor for creating cloze-deletion flashcards, e.g.:
-    `module.exports = ClozeCard;`
-
-  * The constructor should accept two arguments: `text` and `cloze`.
-
-  * The constructed object should have a `cloze` property that contains _only_ the cloze-deleted portion of the text.
-
-  * The constructed object should have a `partial` property that contains _only_ the partial text.
-
-  * The constructed object should have a `fullText` property that contains _only_ the full text.
-
-  * The constructor should throw or log an error when the cloze deletion does _not_ appear in the input text.
-
-  * Use prototypes to attach these methods, wherever possible.
-
-The bulk of this assignment is implementing `ClozeCard`. If you build a robust `ClozeCard` implementation, feel free to try your hand at implementing a front-end, as well.
-
-### Examples
-
-Your constructors should work as follows.
-
-```
-var firstPresident = new BasicCard(
-    "Who was the first president of the United States?", "George Washington");
-
-// "Who was the first president of the United States?"
-console.log(firstPresident.front); 
-
-// "George Washington"
-console.log(firstPresident.back); 
-
-var firstPresidentCloze = new ClozeCard(
-    "George Washington was the first president of the United States.", "George Washington");
-
-// "George Washington"
-console.log(firstPresidentCloze.cloze); 
-
-// " ... was the first president of the United States.
-console.log(firstPresidentCloze.partial); "
-
-// "George Washington was the first president of the United States.
-console.log(firstPresidentCloze.fullText): "
-
-// Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-var brokenCloze = new ClozeCard("This doesn't work", "oops");
-```
-
-### Bonuses
-
-* Write your constructors such that users can call them with or without the `new` keyword. 
-
-  * Look up scope-safe constructors, and try to implement them. It takes only two additional lines of code.
-
-- - -
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
+    --Deleting cards through the interface
+    --Editing cards through the interface
+    --Using a database like MongoDB
+    --Creating a really cool, responsive, animated, web-based front-end :D

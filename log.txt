@@ -1,0 +1,11 @@
+[{"front":"Hindu God of rain and thunder, carries a thunderbolt?","back":"Indra"},
+{"front":"Which Greek God convinced a reluctant Achilles to fight for Agamemnon – a war the Greek hero did not want to fight?","back":"Odysseus"},
+{"front":"In Hindu mythology, what God changed into a swan to seduce the beautiful Saraswati?","back":"Brahma"},
+{"front":"What island sank into the ocean “in a single day and night of misfortune” after a failed attempt to invade Athens?","back":"Atlantis"},
+{"front":"From Hindu mythology, what is the name of the brother that saves Jatayu when he flew too close to the sun?","back":"Sampati"},
+{"front":"In Greek mythology, which God controlled the oceans and seas and created horses?","back":"Poseidon"},
+{"front":"What real mountain in Tibet, with great religious significance, is where Hindu mythology deities reside, called the Shiva loka?","back":"Mount Kailash"},
+{"front":"Achilles and what Hindu god died from an arrow shot into their heel?","back":"Krishna"},
+{"front":"According to legend, what creature stormed into town and challenged Krishna to a bull fight that all the heavens watched?","back":"Aristasur the Bull Demon"},
+{"front":"Cupid, the God of Desire, was his Roman counterpart, while who was the Greek god of sexual attraction?","back":"Eros"},
+{"front":"She is the chief consort and the assistant of Kama (Kamadeva), the god of love in Hindu mythology?","back":"Rati"}]
