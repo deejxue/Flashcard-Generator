@@ -17,14 +17,14 @@ This Flashcard Generator is designed to be user-friendly.  RUN 'node FlashCardAp
 
 ## Table of Contents
 
-- [Install and Use this App](#InstallUse)
-- [Creating a Basic Flashcard](#CreatingBasicFlashcards)
-- [Creating a Cloze Flashcard](#CreatingClozeFlashcards)
-- [Taking a quiz](#Quizes)
-- [Next Steps](#ToFollow)
+- [Install and Use this App](#how-to-install-and-use-this-app)
+- [Creating a Basic Flashcard](#creating-basic-flashcards)
+- [Creating a Cloze Flashcard](#creating-cloze-flashcards)
+- [Taking a quiz](#quizes)
+- [Next Steps](#to-follow-down-the-road)
 
 
-##  How to Install and Use this app 
+##  How to Install and Use this app
 
 From a directory of your choosing, simply clone this repository.  Install the 'inquirer.js' and 'node.js' dependency modules from the command line, and RUN 'node FlashCardApp.js' to start the app.
 
