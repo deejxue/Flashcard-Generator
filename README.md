@@ -21,7 +21,7 @@ This Flashcard Generator is designed to be user-friendly.  RUN 'node FlashCardAp
 - [Creating a Basic Flashcard](#creating-basic-flashcards)
 - [Creating a Cloze Flashcard](#creating-cloze-flashcards)
 - [Taking a quiz](#quizes)
-- [Improvements I'd like to make...](#improvements-i-d-like-to-make)
+- [Improvements I'd like to make...](#improvements-id-like-to-make)
 
 
 ##  How to Install and Use this app
