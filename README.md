@@ -21,7 +21,7 @@ This Flashcard Generator is designed to be user-friendly.  RUN 'node FlashCardAp
 - [Creating a Basic Flashcard](#creating-basic-flashcards)
 - [Creating a Cloze Flashcard](#creating-cloze-flashcards)
 - [Taking a quiz](#quizes)
-- [Anything else to do?](#to-follow-down-the-road)
+- [Improvements I'd like to make...](#improvements-i-d-like-to-make)
 
 
 ##  How to Install and Use this app
@@ -48,7 +48,7 @@ Creating Cloze cards also couldn't be easier.  Choose 'Create Cloze Cards' from 
 It is also easy to quiz yourself using the flashcards you created.  Choose the 'basic-quiz' or 'cloze-quiz' option, depending which set of cards you'd like to access. The basic quiz will present the front of your card and allow you to type in the answer.  The cloze quiz will present your cloze cards with a blank replacing the hidden word/s.  In both cases, the program will let you know whether each answer was correct and tally your score at the end.  
 
 
-##  To Follow Down the Road...
+##  Improvements I'd like to make...
 
 Here's a short list of things I'd like to incorporate sometime in the future....
 
