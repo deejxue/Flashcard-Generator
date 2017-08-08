@@ -1,5 +1,10 @@
 #  ****FLASH CARD GENERATOR****
 
+
+![alt text](./img/Flashcards1.png)
+![alt text](./img/Flashcards2.png)
+![alt text](./img/Flashcards3.png)
+
 ## What is this app anyways???
 
 This is a fun command-line based trivia flash card game where the user is prompted with questions and shown the correct answer after making a guess. 
